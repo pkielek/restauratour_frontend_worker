@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
-        android:label="restaurant_helper_tablet"
+        android:label="Restaura TOUR Worker"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

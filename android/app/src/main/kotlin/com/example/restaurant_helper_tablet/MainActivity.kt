@@ -1,4 +1,4 @@
-package com.example.restaurant_helper_tablet
+package pkielek.restauratour.worker
 
 import io.flutter.embedding.android.FlutterActivity
 
