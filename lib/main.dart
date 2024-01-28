@@ -6,6 +6,8 @@ import 'package:routemaster/routemaster.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:utils/utils.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
 
 import 'routes.dart';
 
@@ -27,6 +29,15 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp.router(
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('pl'),
+        Locale('en')
+      ],
       title: 'Restaurant Helper',
       theme: themeData,
       routerDelegate: RoutemasterDelegate(

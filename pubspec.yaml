@@ -15,6 +15,12 @@ dependencies:
     path: ../shared/auth
   planner:
     path: ../shared/planner
+  restaurant:
+    path: ../shared/restaurant
+  reservations:
+    path: ../shared/reservations
+  menu:
+    path: ../shared/menu
   dio: ^5.2.0
   rounded_loading_button: ^2.1.0
   routemaster: ^1.0.1
@@ -26,6 +32,10 @@ dependencies:
   json_annotation: ^4.8.1
   flutter_hooks: ^0.20.3
   url_launcher: ^6.1.8
+  simple_animations: ^5.0.2
+  flutter_localizations:
+    sdk: flutter
+
 
 dev_dependencies:
   flutter_test:
@@ -51,6 +61,7 @@ flutter:
   - images/logo.webp
   - images/logo.svg
   - images/logowide.webp
+  - images/missing2.png
   - .env
 
   fonts:
