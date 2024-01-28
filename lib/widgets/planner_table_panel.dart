@@ -70,7 +70,7 @@ class PlannerTablePanel extends ConsumerWidget {
                                       color: Colors.black,
                                       fontWeight: FontWeight.normal),
                                 )),
-                        if (data != null)
+                        if (data != null && data!.date.isAfter(DateTime.now()))
                           Padding(
                             padding: const EdgeInsets.only(bottom: 15.0),
                             child: Text(
@@ -79,7 +79,7 @@ class PlannerTablePanel extends ConsumerWidget {
                               style: listLightStyle,
                             ),
                           ),
-                        if (data != null)
+                        if (data != null && data!.date.isAfter(DateTime.now()))
                           Padding(
                             padding: const EdgeInsets.only(bottom: 8.0),
                             child: Text(
